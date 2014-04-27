@@ -80,7 +80,7 @@ Write analysis out put to file.
 ###create a tidy set. 
 Create a descriptive column for activity. 
 
-`tidySet[,Activity_Desc:={ifelse(Activity== 1,"WALKING",ifelse(Activity== 2,"WALKING_UPSTAIRS",ifelse(Activity==3,"WALKING_DOWNSTAIRS",ifelse(Activity== 4,"SITTING",ifelse(Activity== 5,"STANDING",ifelse(Activity==6,"LAYING","NA"))))))}]`
+	tidySet[,Activity_Desc:={ifelse(Activity== 1,"WALKING",ifelse(Activity== 2,"WALKING_UPSTAIRS",ifelse(Activity==3,"WALKING_DOWNSTAIRS",ifelse(Activity== 4,"SITTING",ifelse(Activity== 5,"STANDING",ifelse(Activity==6,"LAYING","NA"))))))}]
 
 add the new column to column list.
 Extract the data and write out put to "tidy dataset-output.txt".
